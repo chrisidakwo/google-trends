@@ -1,8 +1,10 @@
-<?php declare(strict_types=1);
+<?php
 
-namespace GSoares\GoogleTrends\Result;
+declare(strict_types=1);
 
-use GSoares\GoogleTrends\Error\GoogleTrendsException;
+namespace ChrisIdakwo\GoogleTrends\Result;
+
+use ChrisIdakwo\GoogleTrends\Error\GoogleTrendsException;
 
 /**
  * @author Gabriel Felipe Soares <gabrielfs7@gmail.com>

@@ -1,13 +1,15 @@
-<?php declare(strict_types=1);
+<?php
 
-namespace GSoares\GoogleTrends\Tests\Unit\Search\Psr7;
+declare(strict_types=1);
+
+namespace ChrisIdakwo\GoogleTrends\Tests\Unit\Search\Psr7;
 
 use DateTimeImmutable;
-use GSoares\GoogleTrends\Error\GoogleTrendsException;
-use GSoares\GoogleTrends\Result\RelatedResultCollection;
-use GSoares\GoogleTrends\Search\Psr7\Search;
-use GSoares\GoogleTrends\Search\SearchFilter;
-use GSoares\GoogleTrends\Search\SearchInterface;
+use ChrisIdakwo\GoogleTrends\Error\GoogleTrendsException;
+use ChrisIdakwo\GoogleTrends\Result\RelatedResultCollection;
+use ChrisIdakwo\GoogleTrends\Search\Psr7\Search;
+use ChrisIdakwo\GoogleTrends\Search\SearchFilter;
+use ChrisIdakwo\GoogleTrends\Search\SearchInterface;
 use PHPUnit\Framework\MockObject\MockObject;
 use PHPUnit\Framework\TestCase;
 use Psr\Http\Message\ServerRequestInterface;

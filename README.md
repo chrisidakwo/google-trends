@@ -2,23 +2,19 @@
 
 [![Total Downloads](https://img.shields.io/packagist/dt/gabrielfs7/google-trends?server=https%3A%2F%2Fpackagist.org)](https://packagist.org/packages/gabrielfs7/google-trends)
 [![Latest Stable Version](https://img.shields.io/packagist/v/gabrielfs7/google-trends.svg?style=flat-square)](https://packagist.org/packages/gabrielfs7/google-trends)
-
 ![Branch master](https://img.shields.io/badge/branch-master-brightgreen.svg?style=flat-square)
-[![Build Status](https://scrutinizer-ci.com/g/gabrielfs7/google-trends/badges/build.png?b=master)](https://scrutinizer-ci.com/g/gabrielfs7/google-trends/build-status/master)
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/gabrielfs7/google-trends/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/gabrielfs7/google-trends/?branch=master)
-[![Code Coverage](https://scrutinizer-ci.com/g/gabrielfs7/google-trends/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/gabrielfs7/google-trends/?branch=master)
 
-A easier way to search on Google Trends and get a standard response in JSON or PHP DTO.
+An easier way to search on Google Trends and get a standard response in JSON or PHP DTO.
 
 ## Dependencies
 
-- PHP 7.2+
+- PHP 8.0+
 - PHP ext-json
 
 ## Advantages on using this API
 
 - Get standard response that can be easily imported to your BI system.
-- No need to have a google account.
+- No need to have a Google account.
 - No need for web scraping data from Google Trends UI.
 - We deal with Google request token handling for you.
 - Allows you to create custom reports that better fit to your business. 
@@ -47,14 +43,14 @@ A easier way to search on Google Trends and get a standard response in JSON or P
 
 ### Using Open API and PSR7
 
-The library provides PSR7 http message support. Check [\GSoares\GoogleTrends\Search\Psr7\Search](./src/Search/Psr7/Search.php).
+The library provides PSR7 http message support. Check [\ChrisIdakwo\GoogleTrends\Search\Psr7\Search](./src/Search/Psr7/Search.php).
 
 Example:
 
 ```php
 <?php
-use GSoares\GoogleTrends\Search\Psr7\Search;
-use GSoares\GoogleTrends\Search\RelatedQueriesSearch;
+use ChrisIdakwo\GoogleTrends\Search\Psr7\Search;
+use ChrisIdakwo\GoogleTrends\Search\RelatedQueriesSearch;
 use GuzzleHttp\Psr7\ServerRequest;
 
 $search = new RelatedQueriesSearch();
@@ -78,7 +74,7 @@ If you prefer your own implementation, please use the steps bellow:
 ### 1) Create a `SearchFilter` with your restrictions
 
 ```php
-$searchFilter = (new GSoares\GoogleTrends\Search\SearchFilter())
+$searchFilter = (new ChrisIdakwo\GoogleTrends\Search\SearchFilter())
         ->withCategory(0) //All categories
         ->withSearchTerm('google')
         ->withLocation('US')
@@ -101,7 +97,7 @@ $searchFilter = (new GSoares\GoogleTrends\Search\SearchFilter())
 #### Related Queries
 
 ```php
-$result = (new GSoares\GoogleTrends\Search\RelatedQueriesSearch())
+$result = (new ChrisIdakwo\GoogleTrends\Search\RelatedQueriesSearch())
     ->search($searchFilter)
     ->jsonSerialize();
 ```
@@ -133,7 +129,7 @@ JSON response example:
 #### Related Topics
 
 ```php
-$result = (new GSoares\GoogleTrends\Search\RelatedTopicsSearch())
+$result = (new ChrisIdakwo\GoogleTrends\Search\RelatedTopicsSearch())
     ->search($searchFilter)
     ->jsonSerialize();
 ```
@@ -165,7 +161,7 @@ JSON response example:
 #### Interest Over Time
 
 ```php
-$result = (new GSoares\GoogleTrends\Search\InterestOverTimeSearch())
+$result = (new ChrisIdakwo\GoogleTrends\Search\InterestOverTimeSearch())
             ->search($relatedSearchUrlBuilder)
             ->jsonSerialize();
 ```
@@ -199,7 +195,7 @@ JSON response example:
 #### Interest By Region
 
 ```php
-$result = (new GSoares\GoogleTrends\Search\InterestByRegionSearch())
+$result = (new ChrisIdakwo\GoogleTrends\Search\InterestByRegionSearch())
             ->search($relatedSearchUrlBuilder)
             ->jsonSerialize();
 ```

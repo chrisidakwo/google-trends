@@ -1,9 +1,11 @@
-<?php declare(strict_types=1);
+<?php
 
-namespace GSoares\GoogleTrends\Search;
+declare(strict_types=1);
+
+namespace ChrisIdakwo\GoogleTrends\Search;
 
 use DateTimeImmutable;
-use GSoares\GoogleTrends\Error\GoogleTrendsException;
+use ChrisIdakwo\GoogleTrends\Error\GoogleTrendsException;
 
 /**
  * @author Gabriel Felipe Soares <gabrielfs7@gmail.com>
@@ -30,7 +32,7 @@ class SearchFilter
     private $location;
 
     /**
-     * @var string
+     * @var        string
      * @deprecated Will be removed, cause other languages do not work as filter. We should utilize only location
      */
     private $language;

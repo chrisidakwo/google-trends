@@ -1,10 +1,12 @@
-<?php declare(strict_types=1);
+<?php
 
-namespace GSoares\GoogleTrends\Tests\Unit\Result;
+declare(strict_types=1);
 
-use GSoares\GoogleTrends\Error\GoogleTrendsException;
-use GSoares\GoogleTrends\Result\ExploreResult;
-use GSoares\GoogleTrends\Result\ExploreResultCollection;
+namespace ChrisIdakwo\GoogleTrends\Tests\Unit\Result;
+
+use ChrisIdakwo\GoogleTrends\Error\GoogleTrendsException;
+use ChrisIdakwo\GoogleTrends\Result\ExploreResult;
+use ChrisIdakwo\GoogleTrends\Result\ExploreResultCollection;
 use PHPUnit\Framework\TestCase;
 
 class ExploreResultCollectionTest extends TestCase

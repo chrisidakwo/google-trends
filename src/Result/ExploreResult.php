@@ -1,6 +1,8 @@
-<?php declare(strict_types=1);
+<?php
 
-namespace GSoares\GoogleTrends\Result;
+declare(strict_types=1);
+
+namespace ChrisIdakwo\GoogleTrends\Result;
 
 /**
  * @author Gabriel Felipe Soares <gabrielfs7@gmail.com>

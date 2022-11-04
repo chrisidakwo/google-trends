@@ -1,8 +1,10 @@
-<?php declare(strict_types=1);
+<?php
 
-namespace GSoares\GoogleTrends\Search;
+declare(strict_types=1);
 
-use GSoares\GoogleTrends\Error\GoogleTrendsException;
+namespace ChrisIdakwo\GoogleTrends\Search;
+
+use ChrisIdakwo\GoogleTrends\Error\GoogleTrendsException;
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
 use GuzzleHttp\Exception\ClientException;

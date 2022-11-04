@@ -1,9 +1,11 @@
-<?php declare(strict_types=1);
+<?php
 
-namespace GSoares\GoogleTrends\Tests\Unit\Result;
+declare(strict_types=1);
 
-use GSoares\GoogleTrends\Result\RelatedResult;
-use GSoares\GoogleTrends\Result\RelatedResultCollection;
+namespace ChrisIdakwo\GoogleTrends\Tests\Unit\Result;
+
+use ChrisIdakwo\GoogleTrends\Result\RelatedResult;
+use ChrisIdakwo\GoogleTrends\Result\RelatedResultCollection;
 use PHPUnit\Framework\TestCase;
 
 class RelatedResultCollectionTest extends TestCase

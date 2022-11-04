@@ -1,9 +1,11 @@
-<?php declare(strict_types=1);
+<?php
 
-namespace GSoares\GoogleTrends\Tests\Unit\Result;
+declare(strict_types=1);
 
-use GSoares\GoogleTrends\Result\InterestByRegionCollection;
-use GSoares\GoogleTrends\Result\InterestByRegionResult;
+namespace ChrisIdakwo\GoogleTrends\Tests\Unit\Result;
+
+use ChrisIdakwo\GoogleTrends\Result\InterestByRegionCollection;
+use ChrisIdakwo\GoogleTrends\Result\InterestByRegionResult;
 use PHPUnit\Framework\TestCase;
 
 class InterestByRegionCollectionTest extends TestCase

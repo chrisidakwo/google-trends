@@ -1,10 +1,12 @@
-<?php declare(strict_types=1);
+<?php
 
-namespace GSoares\GoogleTrends\Search\Psr7;
+declare(strict_types=1);
+
+namespace ChrisIdakwo\GoogleTrends\Search\Psr7;
 
 use DateTimeImmutable;
-use GSoares\GoogleTrends\Search\SearchFilter;
-use GSoares\GoogleTrends\Search\SearchInterface;
+use ChrisIdakwo\GoogleTrends\Search\SearchFilter;
+use ChrisIdakwo\GoogleTrends\Search\SearchInterface;
 use GuzzleHttp\Psr7\Response;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;

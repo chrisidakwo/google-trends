@@ -1,11 +1,13 @@
-<?php declare(strict_types=1);
+<?php
 
-namespace GSoares\GoogleTrends\Search;
+declare(strict_types=1);
 
-use GSoares\GoogleTrends\Error\GoogleTrendsException;
-use GSoares\GoogleTrends\Result\InterestByRegionCollection;
-use GSoares\GoogleTrends\Result\InterestByRegionResult;
-use GSoares\GoogleTrends\Result\ResultCollectionInterface;
+namespace ChrisIdakwo\GoogleTrends\Search;
+
+use ChrisIdakwo\GoogleTrends\Error\GoogleTrendsException;
+use ChrisIdakwo\GoogleTrends\Result\InterestByRegionCollection;
+use ChrisIdakwo\GoogleTrends\Result\InterestByRegionResult;
+use ChrisIdakwo\GoogleTrends\Result\ResultCollectionInterface;
 
 /**
  * @author Gabriel Felipe Soares <gabrielfs7@gmail.com>

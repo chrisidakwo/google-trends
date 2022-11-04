@@ -1,6 +1,8 @@
-<?php declare(strict_types=1);
+<?php
 
-namespace GSoares\GoogleTrends\Error;
+declare(strict_types=1);
+
+namespace ChrisIdakwo\GoogleTrends\Error;
 
 use Exception;
 use Throwable;

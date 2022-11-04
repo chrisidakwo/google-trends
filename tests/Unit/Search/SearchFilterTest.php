@@ -1,10 +1,12 @@
-<?php declare(strict_types=1);
+<?php
 
-namespace GSoares\GoogleTrends\Tests\Unit\Search;
+declare(strict_types=1);
+
+namespace ChrisIdakwo\GoogleTrends\Tests\Unit\Search;
 
 use DateTimeImmutable;
-use GSoares\GoogleTrends\Error\GoogleTrendsException;
-use GSoares\GoogleTrends\Search\SearchFilter;
+use ChrisIdakwo\GoogleTrends\Error\GoogleTrendsException;
+use ChrisIdakwo\GoogleTrends\Search\SearchFilter;
 use PHPUnit\Framework\TestCase;
 
 class SearchFilterTest extends TestCase

@@ -1,17 +1,19 @@
-<?php declare(strict_types=1);
+<?php
 
-namespace GSoares\GoogleTrends\Tests\Integration\Search;
+declare(strict_types=1);
+
+namespace ChrisIdakwo\GoogleTrends\Tests\Integration\Search;
 
 use DateTimeImmutable;
-use GSoares\GoogleTrends\Error\GoogleTrendsException;
-use GSoares\GoogleTrends\Result\ExploreResult;
-use GSoares\GoogleTrends\Result\ExploreResultCollection;
-use GSoares\GoogleTrends\Result\InterestByRegionCollection;
-use GSoares\GoogleTrends\Result\InterestByRegionResult;
-use GSoares\GoogleTrends\Search\ExploreSearch;
-use GSoares\GoogleTrends\Search\InterestByRegionSearch;
-use GSoares\GoogleTrends\Search\SearchFilter;
-use GSoares\GoogleTrends\Search\SearchRequest;
+use ChrisIdakwo\GoogleTrends\Error\GoogleTrendsException;
+use ChrisIdakwo\GoogleTrends\Result\ExploreResult;
+use ChrisIdakwo\GoogleTrends\Result\ExploreResultCollection;
+use ChrisIdakwo\GoogleTrends\Result\InterestByRegionCollection;
+use ChrisIdakwo\GoogleTrends\Result\InterestByRegionResult;
+use ChrisIdakwo\GoogleTrends\Search\ExploreSearch;
+use ChrisIdakwo\GoogleTrends\Search\InterestByRegionSearch;
+use ChrisIdakwo\GoogleTrends\Search\SearchFilter;
+use ChrisIdakwo\GoogleTrends\Search\SearchRequest;
 use PHPUnit\Framework\TestCase;
 
 class InterestByRegionSearchTest extends TestCase

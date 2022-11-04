@@ -1,12 +1,14 @@
-<?php declare(strict_types=1);
+<?php
 
-namespace GSoares\GoogleTrends\Search;
+declare(strict_types=1);
+
+namespace ChrisIdakwo\GoogleTrends\Search;
 
 use DateTimeImmutable;
-use GSoares\GoogleTrends\Error\GoogleTrendsException;
-use GSoares\GoogleTrends\Result\InterestOverTimeCollection;
-use GSoares\GoogleTrends\Result\InterestOverTimeResult;
-use GSoares\GoogleTrends\Result\ResultCollectionInterface;
+use ChrisIdakwo\GoogleTrends\Error\GoogleTrendsException;
+use ChrisIdakwo\GoogleTrends\Result\InterestOverTimeCollection;
+use ChrisIdakwo\GoogleTrends\Result\InterestOverTimeResult;
+use ChrisIdakwo\GoogleTrends\Result\ResultCollectionInterface;
 
 /**
  * @author Gabriel Felipe Soares <gabrielfs7@gmail.com>

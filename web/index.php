@@ -1,12 +1,12 @@
 <?php
 require __DIR__ . '/../vendor/autoload.php';
 
-use GSoares\GoogleTrends\Search\Psr7\Search;
-use GSoares\GoogleTrends\Search\InterestByRegionSearch;
-use GSoares\GoogleTrends\Search\InterestOverTimeSearch;
-use GSoares\GoogleTrends\Search\RelatedTopicsSearch;
-use GSoares\GoogleTrends\Search\RelatedQueriesSearch;
-use GSoares\GoogleTrends\Search\SearchInterface;
+use ChrisIdakwo\GoogleTrends\Search\Psr7\Search;
+use ChrisIdakwo\GoogleTrends\Search\InterestByRegionSearch;
+use ChrisIdakwo\GoogleTrends\Search\InterestOverTimeSearch;
+use ChrisIdakwo\GoogleTrends\Search\RelatedTopicsSearch;
+use ChrisIdakwo\GoogleTrends\Search\RelatedQueriesSearch;
+use ChrisIdakwo\GoogleTrends\Search\SearchInterface;
 use GuzzleHttp\Psr7\ServerRequest;
 
 function getUri(): string

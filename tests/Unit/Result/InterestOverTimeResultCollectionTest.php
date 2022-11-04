@@ -1,10 +1,12 @@
-<?php declare(strict_types=1);
+<?php
 
-namespace GSoares\GoogleTrends\Tests\Unit\Result;
+declare(strict_types=1);
+
+namespace ChrisIdakwo\GoogleTrends\Tests\Unit\Result;
 
 use DateTimeImmutable;
-use GSoares\GoogleTrends\Result\InterestOverTimeCollection;
-use GSoares\GoogleTrends\Result\InterestOverTimeResult;
+use ChrisIdakwo\GoogleTrends\Result\InterestOverTimeCollection;
+use ChrisIdakwo\GoogleTrends\Result\InterestOverTimeResult;
 use PHPUnit\Framework\TestCase;
 
 class InterestOverTimeResultCollectionTest extends TestCase
