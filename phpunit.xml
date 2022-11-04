@@ -15,8 +15,11 @@
         stopOnFailure="false"
         bootstrap="vendor/autoload.php">
     <testsuites>
-        <testsuite name="Project Test Suite">
-            <directory>tests</directory>
+        <testsuite name="Integration Tests">
+            <directory>tests/Integration</directory>
+        </testsuite>
+        <testsuite name="Unit Tests">
+            <directory>tests/Unit</directory>
         </testsuite>
     </testsuites>
     <filter>
